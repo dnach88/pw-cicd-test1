@@ -9,7 +9,7 @@ name: Playwright CI            # Label shown in Actions UI & README badge
 # ────────────────
 on:
   push:                        # Run only when commits land on main
-    branches: [main]
+    branches: [master]
 
   # pull_request:              # 🔒 Disabled to avoid duplicate runs.
   #   branches: [main]         #   → Uncomment if you want pre‑merge checks.
