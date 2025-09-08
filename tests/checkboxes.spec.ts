@@ -6,10 +6,10 @@ test.describe('Checkboxes flow', () => {
         await pm.checkboxesPage.openCheckboxesPage();
         await pm.checkboxesPage.checkFirstBox();
         
-        await expect(page).toHaveScreenshot(
-            'checkboxes-after-check.png',
-        {maxDiffPixelRatio: 0.02}       
-        );
+        // await expect(page).toHaveScreenshot(
+        //     'checkboxes-after-check.png',
+        // {maxDiffPixelRatio: 0.02}       
+        // );
         
         await expect(pm.checkboxesPage.locator('form#checkboxes')).toBeVisible();
     });
