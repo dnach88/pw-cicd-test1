@@ -1,7 +1,7 @@
 import { test , expect } from '../fixtures/pom.fixture';
 
-test('Deliberate failure test', async ({ pm }) => {
+test('Test should pass now', async ({ pm }) => {
     await pm.loginPage.openLoginPage();
     await pm.loginPage.userLogin('invalidUser', 'invalidPass');
-    await pm.securePage.assertSuccess();
+    await pm.loginPage.assertFailedUsername();
 });
